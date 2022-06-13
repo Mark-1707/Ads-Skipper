@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Ads Skipper",
+    "version": "1.0.0",
+    "description": "Skips ads in YouTube",
+
+    "content_scripts": [
+        {
+            "js": ["script.js"],
+            "run_at": "document_idle",
+            "matches": ["https://www.youtube.com/*"]
+        }
+    ],
+    "permissions":[
+        "tabs",
+        "activeTab"
+    ]
+}
